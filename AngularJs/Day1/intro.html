@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <title>Angular Js - Binding</title>
+  </head>
+  <body ng-app>
+
+    <input type="text" ng-model="name" />
+    <br />
+    <h1>Hello {{name}}</h1>
+    <br />
+    <hr />
+    <h1>Hello Using bind:</h1>
+    <h2 ng-bind="name"></h2>
+    
+  </body>
+</html>

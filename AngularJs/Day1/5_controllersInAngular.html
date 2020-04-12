@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApplication">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <title>Angular Js - CONTROLLERS IN Js</title>
+  </head>
+  <body>
+    <h1>Angular Controllers</h1>
+    <div ng-controller="myController">
+      <button ng-click="shreya()">SHREYA</button>
+      <button ng-click="drasti()">DRASTI</button>
+      <hr />
+      <h2>THE BUTTON CLICKED WAS: {{ nameClicked }}</h2>
+    </div>
+  </body>
+  <script>
+    var application = angular.module("myApplication", []);
+    application.controller("myController", function($scope) {
+      $scope.nameClicked = "None";
+
+      $scope.drasti = function() {
+        $scope.nameClicked = "Drasti";
+      };
+
+      $scope.shreya = function() {
+        $scope.nameClicked = "Shreya";
+      };
+    });
+  </script>
+</html>

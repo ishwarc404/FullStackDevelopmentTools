@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <title>Forms</title>
+  </head>
+  <body>
+    <div>
+      <h2>A sample form</h2>
+      <form>First Name: <input type="text" ng-model="firstname" /></form>
+
+      <h5>You entered: {{firstname}}</h5>
+      <hr />
+ 
+      <form>
+        Check to show a header:
+        <input type="checkbox" ng-model="myVar" />
+      </form>
+      <span>Value of checkbox is: {{myVar}}</span>
+      <h1 ng-show="true">Header is displayed on when checkbox is checked.</h1>
+      <hr />
+      <form>
+        Pick a topic:
+        <input type="radio" ng-model="myVar" value="myVar" />Dogs
+      </form>
+      <span>Value of checkbox is: {{myVar}}</span>
+    </div>
+  </body>
+</html>
